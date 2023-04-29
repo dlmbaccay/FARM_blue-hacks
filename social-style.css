@@ -12,7 +12,7 @@ body {
 .leftSide {
     width: 15%;
     height: 100vh;
-    background-color: #dadada;
+    background-color: #964b4b;
     float: left;
 
     display: flex;
@@ -45,11 +45,43 @@ body {
     font-weight: bold;
 }
 
+.user a{
+    color: black;
+    text-decoration: none;
+}
+.shortcut-buttons a {
+    text-decoration: none;
+  }
+
+.shortcut-buttons a:visited {
+    color: black;
+    text-decoration: none;
+  }
+
+.leftSide .shortcut-buttons .user a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+.leftSide .shortcut-buttons .user a:hover {
+    background-color: #000000;
+  }
+
 .middle {
+    max-height: 100vh;
     width: 65%;
     height: 100vh;
     background-color: #dadada;
     float: left;
+    display: flex;
+
+    overflow-y: auto;
+    align-items: center;
+    justify-content: center;
 }
 
 .rightSide {
@@ -64,3 +96,46 @@ body {
 .rightSide img {
     width: 100%;
 }
+
+/* newsfeed  */
+
+.news-feed {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .post {
+    border: 1px solid #ccc;
+    padding: 1rem;
+  }
+  
+  .post-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .post-header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  .post-body {
+    margin-top: 1rem;
+  }
+  
+  .post-footer {
+    margin-top: 1rem;
+  }
+  
+  .post-footer a {
+    margin-right: 1rem;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .post-footer a:hover {
+    text-decoration: underline;
+  }
