@@ -60,7 +60,7 @@ login.addEventListener('click', (e) => {
                 alert(error);
             });
 
-      window.location.href = "home.html";
+      window.location.href = "market.html";
         
     })
     .catch((error) => {

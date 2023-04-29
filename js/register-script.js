@@ -53,7 +53,7 @@ register.addEventListener('click', () => {
         alert("Data Not Saved")
       });
 
-      window.location.href = "home.html";
+      window.location.href = "market.html";
     })
     .catch((error) => {
       const errorCode = error.code;
