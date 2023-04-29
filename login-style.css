@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* colors:
+    beige
+    A4BE7B
+    5F8D4E
+    285430
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    color: black    ;
+    font-family: Montserrat, sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    height: 40%;
+    width: 60%;
+
+    display: flex; /* Use flexbox */
+    flex-direction: row; /* Set the direction to row */
+    justify-content: space-between; /* Space items evenly along the main axis */
+}
+
+.container #user-information {
+    margin: 0;
+    padding: 0;
+
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.2);
+
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;    
+}
+
+.container #user-information input, .container #user-information button {
+    width: 90%;
+    margin: 10px;
+}
+
+.container #title {
+    width: 60%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+
+    padding: 30px;
+}
