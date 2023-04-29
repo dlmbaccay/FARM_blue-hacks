@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+.hidden {
+    display: none;
+  }
+
+
+body {
+    font-family: Montserrat, sans-serif;
+}
+
+.chart-header {
+    color: black;
+    text-align: center;
+    font-size: 36px;
+}
+
+.market-container {
+    /* display: flex;
+    justify-content: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #dadada;
+    
+}
+.market-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.market-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: center;
+  }
+.market-box1 {
+    /* width: auto;
+    height: auto;
+    background-color: #ccc;
+    margin: 10px; */
+    width: 450px;
+    height: auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin: 10px;
+    box-shadow: 2px 2px 5px #ccc;
+    text-align: center;
+    font-size: 18px;
+    word-spacing: 10%;
+}
+.market-box2 {
+    width: 50vw;
+    height: 50vh;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin: 10px;
+    box-shadow: 2px 2px 5px #ccc;
+    font-size: 20px;
+    padding-top: 1%;
+    padding-left: 4%;
+}
+
+.chart-container {
+    width: 600px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.chart-options {
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+}
+
+.highlight {
+    width: auto;
+    padding: 10px;
+}
+
+.highlight:hover {
+    background-color: rgb(218, 218, 218);
+    color: rgb(97, 97, 97);
+}
+
+.currency::before {
+    content: "₱";
+  }
