@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-style: Montserrat, sans-serif;
+}
+
+#first-page {
+    height: 100vh;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#first-page .course {
+    width: 40%;
+    height: 70%;
+    padding: 30px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    color: white;
+}
+
+#first-page .course .course-title {
+    font-size: 2rem;
+
+}
+
+#first-page .course .course-prof {
+    font-size: 1.2rem;
+}
+
+#first-page .course .course-description {
+    text-align: justify;
+    padding: 10px;
+}
+
+#second-page, #third-page {
+    margin: 0;
+    padding: 0; 
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#second-page .title, #third-page .title {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#second-page .container, #third-page .container {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#second-page .firstCol img, #third-page .firstCol img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    align-items: center;
+}
+
+#second-page .firstCol, #third-page .firstCol {
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    padding: 20px;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#second-page .secondCol, #third-page .secondCol {
+    padding: 40px;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#second-page .secondCol .learning-objectives, #third-page .secondCol .learning-objectives {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#second-page .secondCol .student-testimonials, #third-page .secondCol .student-testimonials {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#second-page .thirdCol, #third-page .thirdCol {
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    padding: 20px;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#second-page .thirdCol .instructor-bio, #third-page .thirdCol .instructor-bio{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#second-page .thirdCol .instructor-bio .div-title, #third-page .thirdCol .instructor-bio .div-title {
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+#second-page .thirdCol .instructor-bio .image img, #third-page .thirdCol .instructor-bio .image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+#second-page .thirdCol .instructor-bio .subtitle, #third-page .thirdCol .instructor-bio .subtitle {
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+}
+
+#second-page .thirdCol .instructor-bio .div-content, #third-page .thirdCol .instructor-bio .div-content {
+    text-align: justify;
+    padding: 10px;
+}
