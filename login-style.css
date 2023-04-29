@@ -6,6 +6,11 @@
     5F8D4E
     285430
 */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
 body {
     margin: 0;
@@ -20,15 +25,36 @@ body {
 
     height: 100vh;
     width: 100vw;
+
+    /* background-image: radial-gradient(farthest-corner at 100px 100px, rgb(59, 120, 87), rgb(147, 122, 62), rgb(83, 69, 38)); */
+    background-image: linear-gradient(100deg, rgb(59, 120, 87), rgb(147, 122, 62), rgba(165, 170, 73), rgb(59, 120, 87));
+    /* background-image: radial-gradient(farthest-corner at 1000px 1000px, blue, red, white); */
+    background-size: 300% 300%;
+    /* transition: 1s; */
+    animation: color 12s ease-in-out infinite alternate;
+}
+@keyframes color{
+    0%{
+        /* background-position: 0 50%; */
+        background-position: left;
+    }
+    /* 50%{
+        background-position: 100 50%;
+    } */
+    100%{
+        /* background-position: 0 50%; */
+        background-position: right;
+    }
 }
 
 .container {
     height: 40%;
     width: 60%;
-
+    
     display: flex; /* Use flexbox */
     flex-direction: row; /* Set the direction to row */
     justify-content: space-between; /* Space items evenly along the main axis */
+    
 }
 
 .container #user-information {
@@ -50,6 +76,71 @@ body {
 .container #user-information input, .container #user-information button {
     width: 90%;
     margin: 10px;
+    
+}
+
+.container #user-information button{
+    --primary-color: #645bff;
+    --secondary-color: #fff;
+    --hover-color: rgb(89, 136, 51);
+    --arrow-width: 10px;
+    --arrow-stroke: 2px;
+    background-color: rgb(183, 136, 27);
+    border: 1px rgb(183, 136, 27);
+
+    box-sizing: border-box;
+    border: 0;
+    /* border-radius: 20px; */
+    /* color: var(--secondary-color); */
+    /* padding: 1em 1.8em; */
+    /* background: var(--primary-color); */
+    display: flex;
+    transition: 0.2s background-color;
+    align-items: center;
+    gap: 0.6em;
+    /* font-weight: bold; */
+}
+
+.container #user-information button .arrow-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container #user-information button .arrow {
+    margin-top: 1px;
+    width: var(--arrow-width);
+    /* background: var(--primary-color); */
+    height: var(--arrow-stroke);
+    position: relative;
+    transition: 0.2s;
+}
+
+.container #user-information button .arrow::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    border: solid var(--secondary-color);
+    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+    display: inline-block;
+    top: -3px;
+    right: 3px;
+    transition: 0.2s;
+    padding: 3px;
+    transform: rotate(-45deg);
+}
+  
+.container #user-information button:hover{
+    background: rgb(89, 136, 51);
+    background-color: var(--hover-color);
+}
+
+.container #user-information button:hover .arrow {
+    background: var(--secondary-color);
+}
+
+.container #user-information button:hover .arrow:before {
+    right: 0;
 }
 
 .container #title {

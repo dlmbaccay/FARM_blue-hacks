@@ -10,7 +10,8 @@
 body {
     margin: 0;
     padding: 0;
-    color: black    ;
+    color: white    ;
+    font-weight: bold;
     font-family: Montserrat, sans-serif;
 
     display: flex;
@@ -20,6 +21,22 @@ body {
 
     height: 100vh;
     width: 100vw;
+    background-image: radial-gradient(farthest-corner at 100px 600px, rgb(59, 120, 87), rgb(147, 122, 62), rgba(165, 170, 73), rgb(59, 120, 87));
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite alternate;
+}
+@keyframes color{
+    0%{
+        /* background-position: 0 50%; */
+        background-position: left;
+    }
+    /* 50%{
+        background-position: 100 50%;
+    } */
+    100%{
+        /* background-position: 0 50%; */
+        background-position: right;
+    }
 }
 
 .container {
@@ -50,4 +67,13 @@ body {
 .container #user-information input, .container #user-information button {
     width: 90%;
     margin: 10px;
+}
+
+.container #user-information button{
+    background-color: rgb(183, 136, 27);
+    border: 1px rgb(183, 136, 27);
+}
+
+.container #user-information button:hover{
+    background: rgb(89, 136, 51);
 }
