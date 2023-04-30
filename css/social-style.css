@@ -222,4 +222,15 @@ body {
   border: 1px solid #e5e5e5;
   padding: 20px;
 }
-  
+
+.test {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+}
+
+.nav-farm-logo {
+  width: 50%;
+  height: 50%;
+}
