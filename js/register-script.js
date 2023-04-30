@@ -42,7 +42,8 @@ register.addEventListener('click', () => {
       // ...
       set(ref(database, 'users/' + user.uid), {
           email: email,
-          password : password 
+          password : password,
+          last_login : Date.now()
       })
       .then(() => {
         // Data saved successfully!

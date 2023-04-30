@@ -30,10 +30,12 @@ const database = getDatabase();
 let register = document.getElementById('register');
 let login = document.getElementById('login');
 
+// register function for the user to register to the website using firebase authentication
 register.addEventListener('click', () => {
     window.location.href = "register.html";
 })
 
+// login function for the user to login to the website using firebase authentication
 login.addEventListener('click', (e) => {
 
     var email = document.getElementById('inputEmail').value;
