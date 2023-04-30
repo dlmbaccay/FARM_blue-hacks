@@ -10,7 +10,6 @@ body {
 }
 
 
-
 .leftSide {
     width: 15%;
     height: 100vh;
@@ -42,7 +41,7 @@ body {
     font-weight: bold;
 }
 
-.leftSide .user a{
+.leftSide .user a {
     color: black;
     text-decoration: none;
     margin-bottom: 80px;

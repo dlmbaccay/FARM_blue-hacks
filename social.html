@@ -12,60 +12,52 @@
 <body>
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-        <div class="container-fluid">
-          
-          <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-            <ul class="navbar-nav mb-2 mb-lg-0">
-              
-              <!-- HOME -->
-              <li class="nav-item test">
-                <img src="resources\farm-sprout-logoo.png" class="nav-farm-logo" alt="farm-logo">
-              </li>
+      <div class="container-fluid">
+        
+        <img src="resources/farm_nav.png" style="width: 60px; padding: 5px; margin-bottom: 5px; margin-right: 10px;">
       
-              <!-- SOCIAL -->
-              <li class="nav-item">
-                <a class="nav-link" href="#">SOCIAL</a>
-              </li>
-      
-              <!-- MARKET -->
-              <li class="nav-item">
-                <a class="nav-link" href="market.html">MARKET</a>
-              </li>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Social</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="market.html">Market</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Learn
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="learn.html#second-page">Managing Debt</a></li>
+                <li><a class="dropdown-item" href="learn.html#third-page">Insurance and Risk Management</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="learn.html">Browse Courses</a></li>
+              </ul>
+            </li>
             
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  LEARN
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="learn.html">Managing Debt</a></li>
-                  <li><a class="dropdown-item" href="learn.html">Insurance and Risk Management</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="learn.html">Browse Courses</a></li>
-                </ul>
-              </li>
-      
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <i class="fas fa-user-circle"></i>
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Profile</a></li>
-                  <li><a class="dropdown-item" href="#">Settings</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" id="logout">Logout</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fas fa-user-circle"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Settings</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" id="logout">Log Out</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
 
     <div class="leftSide">
 
         <div class="user">
           <a href="#">
             <img src="resources/john-doe.jpeg" alt="john-doe">
-            <span>John Doe</span>
+            <span>Juan D.C.</span>
           </a>
 
           <a href="#">
