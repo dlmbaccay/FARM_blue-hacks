@@ -10,7 +10,7 @@ body {
 }
 
 .chart-header {
-    color: black;
+    color: rgb(0, 0, 0);
     text-align: center;
     font-size: 36px;
 }
@@ -23,46 +23,60 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #dadada;
+    width: 100%;
+    /* background-color: #3d6a0c; */
+    background-image: radial-gradient(farthest-corner at 100px 100px, rgb(37, 75, 55), rgb(112, 85, 17));
     
+    position: relative;
+    overflow: hidden;
 }
+
+
+
 .market-title {
+    position: relative;
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px;
+    color: rgb(220, 215, 215);
 }
 .market-content {
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    
 }
 
 table th, table td {
     padding: 10px;
     text-align: center;
+    
 }
 
 .market-box1 {
     width: 450px;
-    height: auto;
-    background-color: #fff;
-    border: 1px solid #ccc;
+    height: 45vh;
+    background-color: #ffffff6d;
+    border: 1px solid  #ffffff6d;
     border-radius: 20px;
     margin: 10px;
-    box-shadow: 2px 2px 5px #ccc;
+    box-shadow: 2px 2px 5px #798159;
     text-align: center;
     font-size: 18px;
     word-spacing: 10%;
+    padding-left: 1%;
+    padding-top: 1.5%;
 }
 .market-box2 {
     width: 40vw;
     height: 45vh;
-    background-color: #fff;
-    border: 1px solid #ccc;
+    background-color: #ffffff6d;
+    border: 1px solid  #ffffff6d;
     border-radius: 20px;
     margin: 10px;
-    box-shadow: 2px 2px 5px #ccc;
+    box-shadow: 2px 2px 5px #798159;
     font-size: 20px;
     padding-top: 5%;
     padding-left: 5.5%;
@@ -79,7 +93,11 @@ table th, table td {
     font-weight: 500;
 }
 
-.highlight {
+.chart-options:hover {
+    color: rgb(157, 109, 5);
+}
+
+/* .highlight {
     width: auto;
     padding: 10px;
 }
@@ -87,8 +105,42 @@ table th, table td {
 .highlight:hover {
     background-color: rgb(218, 218, 218);
     color: rgb(97, 97, 97);
-}
+} */
 
 .currency::before {
     content: "₱";
   }
+  
+.bubbles{
+    position: relative;
+    display: flex;
+    z-index: 0;
+}
+
+.bubbles span{
+    position: relative;
+    width: 10px;
+    height: 10px;
+    background: rgb(255, 248, 35);
+    margin: 0 4px;
+    border-radius: 500%;
+    box-shadow: 0 0 0 10px rgba(220, 224, 86, 0.553),
+    0 0 50px rgb(255, 248, 35),
+    0 0 100px rgb(255, 248, 35);
+    animation: animate 15s linear infinite;
+    animation-duration: calc(100s / var(--i));
+}
+.bubbles span:nth-child(even){
+    background: rgb(253, 183, 85);
+    box-shadow: 0 0 0 10px rgba(191, 138, 81, 0.664),
+    0 0 50px rgb(253, 183, 85),
+    0 0 100px rgb(253, 183, 85);
+}
+@keyframes animate{
+    0%{
+        transform: translateY(100vh) scale(0);
+    }
+    100%{
+        transform: translateY(-50vh) scale(0.5);
+    }
+}
