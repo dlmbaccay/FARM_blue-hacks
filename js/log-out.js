@@ -18,11 +18,12 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+// Initialize auth
 const auth = getAuth(app);
-
 
 let logout = document.getElementById('logout');
 
+// Logout function for logout button in market.html and profile.html pages
 logout.addEventListener('click', () => {
     signOut(auth).then(() => {
         // Sign-out successful.

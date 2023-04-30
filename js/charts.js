@@ -177,4 +177,3 @@ toggleChart3Button.addEventListener('click', function() {
     chartContainer2.classList.add('hidden');
     chartContainer3.classList.remove('hidden');
 });
-  
