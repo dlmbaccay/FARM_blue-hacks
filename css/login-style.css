@@ -33,6 +33,7 @@ body {
     /* transition: 1s; */
     animation: color 12s ease-in-out infinite alternate;
 }
+
 @keyframes color{
     0%{
         /* background-position: 0 50%; */
@@ -143,13 +144,23 @@ body {
     right: 0;
 }
 
-.container #title {
+.container .logo {
     width: 60%;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: justify;
+    text-align: center;
 
     padding: 30px;
+    transition: 0.2s;
 }
+
+.container .logo p {
+    font-size: 1rem;
+    color: white;
+}   
+
+.container .logo:hover {
+    transform: scale(1.05);
+}   
