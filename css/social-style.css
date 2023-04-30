@@ -13,7 +13,7 @@ body {
 .leftSide {
     width: 15%;
     height: 100vh;
-    background-color: #dadada;
+    background-color: #325639;
     float: left;
 
     display: flex;
@@ -42,13 +42,13 @@ body {
 }
 
 .leftSide .user a {
-    color: black;
+    color: rgb(215, 215, 214);
     text-decoration: none;
     margin-bottom: 80px;
 }
 
 .leftSide .user a:hover {
-    color: green;
+    color: rgb(199, 183, 0);
 }
 
 .leftSide .shortcut-buttons .user a {
