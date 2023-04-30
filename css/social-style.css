@@ -6,7 +6,7 @@ body {
     padding: 0;
     height: 100vh;
     font-style: Montserrat, sans-serif;
-    background-color: #dadada;
+    background-color: #d8dcc3;
 }
 
 
@@ -197,7 +197,7 @@ body {
  
 /* Style for comments section */
 .comments-section {
-  border: 1px solid #536d4e;
+  border: 1px solid #ccc;
   border-radius: 5px;
   margin-top: 20px;
   padding: 20px;
