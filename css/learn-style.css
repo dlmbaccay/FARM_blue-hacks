@@ -349,3 +349,16 @@ body {
 #third-page .secondCol .learn-more:hover .button-text {
     color: #fff;
 }
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

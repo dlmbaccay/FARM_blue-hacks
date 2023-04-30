@@ -13,12 +13,17 @@ body {
 .leftSide {
     width: 15%;
     height: 100vh;
-    background-color: #325639;
+    background-color: rgba(50, 86, 57, 0.7);
     float: left;
-
+    padding: 15px;
     display: flex;
     flex-direction: column;
     text-align: center;
+    transition: .2s;
+}
+
+.leftSide:hover {
+    background-color: rgba(50, 86, 57, 1);
 }
 
 .leftSide .user {
@@ -48,7 +53,7 @@ body {
 }
 
 .leftSide .user a:hover {
-    color: rgb(199, 183, 0);
+    color: #c7b700;
 }
 
 .leftSide .shortcut-buttons .user a {
@@ -58,11 +63,11 @@ body {
     color: #fff;
     border-radius: 5px;
     text-decoration: none;
-  }
+}
   
 .leftSide .shortcut-buttons .user a:hover {
     background-color: #000000;
-  }
+}
 
 .middle {
     margin-top: 6px;
@@ -71,9 +76,12 @@ body {
     background-color: #dadada;
     float: left;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding-top: 380px; /* add some padding to the top to offset cut-off area */
+    margin-left: 10px;
+    padding-right: 10px;
     overflow-y: scroll;
 }
   
@@ -88,6 +96,7 @@ body {
 
 .rightSide img {
     width: 100%;
+    height: 678px;
 }
 
 /* newsfeed  */
@@ -103,23 +112,39 @@ body {
 }
 
 .write-post #write-area {
-
     height: 100%;
     width: 100%;
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 1rem;
     font-size: 1rem;
+    resize: none;
+}
+
+.write-post .write-post-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .write-post #write-submit {
-    background-color: green;
+    background-color: #325639; 
     border: none;
     border-radius: 5px;
     color: #ffffff;
     cursor: pointer;
     font-size: 1rem;
     padding: 10px 20px;
+    transition: .2s
+}
+
+.write-post #write-submit:hover, .write-post #post button:hover {
+    background-color: #000000;
+}
+
+.write-post #post button {
+  background-color: #c7b700;
 }
 
 .news-feed {
@@ -233,7 +258,7 @@ body {
 }
 
 .comments-section button {
-  background-color: green;
+  background-color: #325639;
   border: none;
   border-radius: 5px;
   color: #ffffff;
@@ -261,4 +286,17 @@ body {
 .nav-farm-logo {
   width: 50%;
   height: 50%;
+}
+
+.middle::-webkit-scrollbar {
+  width: 8px !important;
+}
+
+.middle::-webkit-scrollbar-thumb {
+  background: #888 !important;
+  border-radius: 10px !important;
+}
+
+.middle::-webkit-scrollbar-thumb:hover {
+  background: #555 !important;
 }
