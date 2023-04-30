@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     overflow: hidden;
     margin: 0;
@@ -8,7 +12,6 @@ body {
     font-style: Montserrat, sans-serif;
     background-color: #d8dcc3;
 }
-
 
 .leftSide {
     width: 15%;
@@ -106,7 +109,7 @@ body {
     flex-direction: column;
     padding: 10px;
     gap: 1rem;
-    border: 1px solid #ccc;
+    border: 1px solid white;
     padding: 1rem;
     height: 160px;
 }
@@ -114,7 +117,7 @@ body {
 .write-post #write-area {
     height: 100%;
     width: 100%;
-    border: 1px solid #ccc;
+    border: 1px solid white;
     border-radius: 5px;
     padding: 1rem;
     font-size: 1rem;
@@ -154,7 +157,7 @@ body {
 }
 
 .post {
-  border: 1px solid #ccc;
+  border: 1px solid white;
   padding: 1rem;
 }
 
@@ -197,7 +200,7 @@ body {
  
 /* Style for comments section */
 .comments-section {
-  border: 1px solid #ccc;
+  border: 1px solid white;
   border-radius: 5px;
   margin-top: 20px;
   padding: 20px;
@@ -247,7 +250,7 @@ body {
 }
 
 .comments-section textarea {
-  border: 1px solid #e5e5e5;
+  border: 1px solid white;
   border-radius: 5px;
   box-sizing: border-box;
   font-size: 1rem;
@@ -273,7 +276,7 @@ body {
   right: 20px; /* Distance from the right of the viewport */
   width: 200px;
   background-color: #f5f5f5;
-  border: 1px solid #e5e5e5;
+  border: 1px solid white;
   padding: 20px;
 }
 
