@@ -25,7 +25,7 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
-const database = getDatabase(app);
+const database = getDatabase();
 
 let register = document.getElementById('register');
 let login = document.getElementById('login');
@@ -42,32 +42,12 @@ login.addEventListener('click', (e) => {
     signInWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
         // Signed in
-        const user = userCredential.user;
-        // ...
-
-        // save log in details into real time database
-        var lgDate = new Date();
-        update(ref(database, 'users/' + user.uid), {
-            last_login: lgDate,
-        })
-            .then(() => {
-                // Data saved successfully!
-                alert('user logged in successfully');
-
-            })
-            .catch((error) => {
-                // The write failed...
-                alert(error);
-            });
-
-      window.location.href = "market.html";
-        
+        alert  ('user logged in successfully');
+        window.location.href = "market.html";
     })
     .catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
         alert(errorMessage);
     })
-
-
 })
